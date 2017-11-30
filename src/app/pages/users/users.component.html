@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let user of userList" (@flyInOut.start)="logAnimate($event)" (@flyInOut.done)="logAnimate($event)" [@flyInOut]="'in'">
+
+    <h3>{{ user.name }}</h3>
+    <p>{{ user.email }}</p>
+    <span>{{ user.address.street }} {{ user.address.suite }} {{ user.address.city }}</span>
+  </li>
+</ul>
