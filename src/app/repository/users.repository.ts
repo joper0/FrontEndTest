@@ -13,6 +13,7 @@ export class UsersRepository {
     private http: Http,
   ) { }
 
+  //Listamos los usuarios del endpoint
   public listUsers(): Observable<Array<User>> {
     return this.http.get("https://jsonplaceholder.typicode.com/users")
       .map(response => response.json())

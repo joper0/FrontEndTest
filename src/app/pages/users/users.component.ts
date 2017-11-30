@@ -8,6 +8,7 @@ import { User } from '../../models/user.model';
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss'],
+  //Animacion,efecto transicion del listado de usuarios
   animations: [
     trigger('flyInOut', [
       state('in', style({ transform: 'translateX(0)' })),
